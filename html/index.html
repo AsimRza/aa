@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        padding: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <div>
+        <label for="ad">Ad:</label>
+        <input
+          type="text"
+          id="ad"
+          placeholder="Allahverdi"
+          minlength="3"
+          maxlength="10"
+          value="Kamil"
+        />
+      </div>
+      <div>
+        <label>Email:</label>
+        <input type="email" placeholder="aa@gmail.com" />
+      </div>
+      <div>
+        <label>Age:</label>
+        <input type="number" autofocus min="0" step="10" max="150" />
+      </div>
+
+      <div>
+        <label>Parol:</label>
+        <input type="password" />
+      </div>
+
+      <div>
+        <label>Dogum tarixi:</label>
+        <input type="date" min="2025-03-18" max="2025-04-20" />
+      </div>
+
+      <div>
+        <label>Derinin rengi:</label>
+        <input type="color" />
+      </div>
+
+      <div>
+        <label>Kisi:</label>
+        <input type="radio" checked name="cins" />
+        <label>Qadin:</label>
+        <input type="radio" name="cins" />
+      </div>
+
+      <div>
+        <label>Raziliq verirem</label>
+        <input type="checkbox" checked />
+      </div>
+
+      <div>
+        <label for="sekil">Devetnami yukle</label>
+        <input type="file" id="sekil" multiple />
+      </div>
+
+      <div>
+        <label>Linkedin</label>
+        <input type="url" />
+      </div>
+
+      <div>
+        <label>Tel</label>
+        <input type="tel" />
+      </div>
+
+      <div>
+        <label>Search</label>
+        <input type="search" />
+      </div>
+
+      <div>
+        <label>Depozit</label>
+        <input type="range" min="100" max="10000" />
+      </div>
+      <div>
+        <label>Qeyd:</label>
+        <textarea style="resize: none" rows="10" cols="100"></textarea>
+      </div>
+
+      <div>
+        <label>Universiter:</label>
+        <input type="text" list="university" />
+        <datalist id="university">
+          <option>BDU</option>
+          <option>BMU</option>
+          <option>BSU</option>
+        </datalist>
+      </div>
+
+      <div>
+        <label>Seher:</label>
+        <select>
+          <option>Quba</option>
+          <option>Qusar</option>
+          <optgroup label="Qerb">
+            <option selected>Qazax</option>
+            <option>Ganja</option>
+          </optgroup>
+          <optgroup label="Serq">
+            <option>Baki</option>
+            <option>Sumqayit</option>
+          </optgroup>
+          <optgroup label="Cenub">
+            <option>Lenkeran</option>
+            <option>Lerik</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <input type="submit" value="GOnder with input" />
+      <input type="reset" value="Sifirla" />
+      <button type="submit">Gonder</button>
+    </form>
+  </body>
+</html>
